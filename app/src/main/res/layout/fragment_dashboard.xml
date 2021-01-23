@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/total_balance"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/totalWallet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="30sp"></TextView>
+
+
+
+
+
+                </LinearLayout>
+
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"></View>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+
+                        <TextView
+                            android:id="@+id/totalBTC"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/montserrat"
+                            android:gravity="center"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="20dp"></TextView>
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="@drawable/side_curved"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:layout_marginLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/balances"
+                    android:textColor="@color/colorPrimaryWhite"
+                    android:textSize="20sp">
+
+                </TextView>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"></View>
+
+                <ProgressBar
+                    android:id="@+id/progressBalance"
+                    style="@style/Widget.AppCompat.ProgressBar"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10sp"
+                    android:indeterminate="true"
+                    android:indeterminateTint="@color/colorPrimaryWhite"
+                    android:max="100"
+                    android:progress="10"
+                    android:secondaryProgress="25"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:foreground="?attr/selectableItemBackground"
+                            android:id="@+id/investmentCard"
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:background="@drawable/box_white"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+
+                            <Button
+                                android:backgroundTint="@color/colorPrimary"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:background="@drawable/ic_wallet"></Button>
+
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_weight="1"
+                                android:layout_height="0dp"></View>
+
+                            <TextView
+                                android:id="@+id/investmentWallet"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:text="$ 00.00"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="15sp"></TextView>
+
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="5dp"></View>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:text="@string/investment_wallet"
+                                android:textSize="8dp"
+                                android:textColor="@color/colorPrimaryDark"></TextView>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="0dp"></View>
+
+                        <LinearLayout
+                            android:foreground="?attr/selectableItemBackground"
+                            android:id="@+id/incomeCard"
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:background="@drawable/box_white"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <Button
+                                android:backgroundTint="@color/colorPrimary"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:background="@drawable/ic_wallet"></Button>
+
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"></View>
+
+                            <TextView
+                                android:id="@+id/incomeWallet"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:text="$ 00.00"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="15sp"></TextView>
+
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="5dp"></View>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:text="@string/income_wallet"
+                                android:textSize="8dp"
+                                android:textColor="@color/colorPrimaryDark"></TextView>
+
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="0dp"></View>
+
+                        <LinearLayout
+                            android:foreground="?attr/selectableItemBackground"
+                            android:id="@+id/roiCard"
+                            android:layout_height="140dp"
+                            android:layout_width="120dp"
+                            android:background="@drawable/box_white"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <Button
+                                android:backgroundTint="@color/colorPrimary"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:background="@drawable/ic_wallet"></Button>
+
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"></View>
+
+                            <TextView
+                                android:id="@+id/roiWallet"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:text="$ 00.00"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="15sp"></TextView>
+
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="5dp"></View>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:text="@string/roi_wallet"
+                                android:textSize="8dp"
+                                android:textColor="@color/colorPrimaryDark"></TextView>
+
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="0dp"></View>
+
+                        <LinearLayout
+                            android:foreground="?attr/selectableItemBackground"
+                            android:id="@+id/sponsorCard"
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:background="@drawable/box_white"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <Button
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:backgroundTint="@color/colorPrimary"
+                                android:background="@drawable/ic_wallet"></Button>
+
+
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"></View>
+
+                            <TextView
+                                android:id="@+id/sponsorWallet"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:text="$ 00.00"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="15sp"></TextView>
+
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="5dp"></View>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="15dp"
+                                android:fontFamily="@font/montserrat"
+                                android:text="@string/sponsorship_wallet"
+                                android:textSize="8dp"
+                                android:textColor="@color/colorPrimaryDark"></TextView>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="0dp"></View>
+
+                        <LinearLayout
+                            android:foreground="?attr/selectableItemBackground"
+                            android:id="@+id/rewardCard"
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:background="@drawable/box_white"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <Button
+                                android:backgroundTint="@color/colorPrimary"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:background="@drawable/ic_wallet"></Button>
+
+
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"></View>
+
+                            <TextView
+                                android:id="@+id/rewardWallet"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:text="$ 00.00"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="15sp"></TextView>
+
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="5dp"></View>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="15dp"
+                                android:fontFamily="@font/montserrat"
+                                android:text="@string/reward_wallet"
+                                android:textSize="8dp"
+                                android:textColor="@color/colorPrimaryDark"></TextView>
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/invested_packages"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp">
+
+                </TextView>
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"></View>
+
+                <ProgressBar
+                    android:id="@+id/progressLive"
+                    style="@style/Widget.AppCompat.ProgressBar"
+                    android:layout_width="20dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="center"
+                    android:indeterminate="true"
+                    android:indeterminateTint="@color/colorPrimary"
+                    android:max="100"
+                    android:progress="10"
+                    android:secondaryProgress="25"
+                    android:visibility="invisible" />
+
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclePackage"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="180dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <TextView
+                android:id="@+id/noLive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You are not yet Invested..."
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone"
+                android:fontFamily="@font/montserrat"
+                android:layout_gravity="left"></TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_gravity="center_horizontal"
+        app:tabMode="scrollable"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:tabGravity="center"
+        app:tabIndicatorColor="@color/colorPrimaryWhite"
+        app:tabIndicatorFullWidth="true"
+        app:tabRippleColor="@color/colorAccentLite"
+        app:tabSelectedTextColor="@color/colorPrimaryWhite"
+        android:background="@color/colorPrimary"
+        app:tabTextAppearance="@style/tab_text"
+        app:tabIndicatorHeight="3dp"
+        app:tabTextColor="@color/colorPrimaryWhite">
+        <!--        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"-->
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Investment Wallet" />
+
+
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Income Wallet " />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Roi Wallet" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sponsorship Wallet" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reward Wallet" />
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.viewpager.widget.ViewPager>
+</LinearLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "87391942127",
+    "firebase_url": "https://fxfactory-dc600.firebaseio.com",
+    "project_id": "fxfactory-dc600",
+    "storage_bucket": "fxfactory-dc600.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87391942127:android:decb232ccbd3db9948f21a",
+        "android_client_info": {
+          "package_name": "com.example.fxcaptrade"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87391942127-4kfv3iq13vj68rco71360fg5vfiatq5i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6tDZfN8fbLobTHpuROWwicptoXhfu3p4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "87391942127-4kfv3iq13vj68rco71360fg5vfiatq5i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

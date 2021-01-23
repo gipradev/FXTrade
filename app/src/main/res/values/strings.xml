@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">FX Factory</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_first_home">FirstHome</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_login">Login</string>
+    <string name="menu_about">About Us</string>
+    <string name="menu_registration">Registration</string>
+
+
+    <string name="home_second">Home Second</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_testimony">Testimony</string>
+    <string name="fab_content_desc">Login</string>
+
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Closed</string>
+
+    <!--    Remove hardcore text to string-->
+    <string name="total_balance">Total Balance</string>
+    <string name="balances">Balances</string>
+    <string name="invested_packages">Invested Packages</string>
+    <string name="investment_wallet">Investment Wallet</string>
+    <string name="income_wallet">Income wallet</string>
+    <string name="roi_wallet">ROI wallet</string>
+    <string name="sponsorship_wallet">Sponsorship Wallet</string>
+    <string name="reward_wallet">Reward wallet</string>
+    <string name="company_bitcoin_wallet_address">Company Bitcoin Wallet Address</string>
+    <string name="transferred_bitcoin">Transferred Bitcoin</string>
+    <string name="sender_wallet_address">Sender Wallet Address</string>
+    <string name="transaction_image">Transaction Image</string>
+    <string name="reset">RESET</string>
+    <string name="send">SEND</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="fx_factory">FX FACTORY</string>
+    <string name="user_id">User ID</string>
+    <string name="password">Password</string>
+    <string name="login">login</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="share">Share</string>
+    <string name="my_referral">My Referral</string>
+    <string name="referral_investment">Referral Investment</string>
+    <string name="team_returns">Team Returns</string>
+    <string name="team_rewards">Team Rewards</string>
+    <string name="current_investment">Current Investment</string>
+    <string name="wallet_address">Wallet Address</string>
+    <string name="sponsor_user_id">Sponsor User Id</string>
+    <string name="name">Name</string>
+    <string name="display_name">Display Name</string>
+    <string name="country_name">Country Name</string>
+    <string name="country_code">Country Code</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="email_id">Email Id</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">register</string>
+    <string name="searchHint">Search Country</string>
+    <string name="upload_n_testimony">Upload \nTestimony</string>
+
+
+    <string name="tab">\u0009</string>
+
+</resources>
